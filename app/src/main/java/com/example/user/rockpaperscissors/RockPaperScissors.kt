@@ -37,7 +37,7 @@ class RockPaperScissors : AppCompatActivity() {
             if (yourChoice == "Paper") {
                 Result.text = "Win"
             } else {
-                Result.text = "Lose"
+                Result.text = "Lost"
             }
         } else if (pcChoice == "Paper") {
             if (yourChoice == "Rock") {
@@ -49,7 +49,7 @@ class RockPaperScissors : AppCompatActivity() {
             if (yourChoice == "Rock") {
                 Result.text = "win"
             } else {
-                Result.text = "Lose"
+                Result.text = "Lost"
             }
         }
     }
