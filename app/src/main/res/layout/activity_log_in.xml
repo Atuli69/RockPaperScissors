@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LogInActivity"
+        android:background="@color/colorPrimary"
+        android:padding="20dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Log In"
+                  android:textSize="40sp"
+                  android:textColor="@android:color/white"
+                  android:layout_gravity="center"
+                  android:layout_marginBottom="40dp"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="9dp"
+                  android:inputType="textEmailAddress"
+                  android:id="@+id/logInActivityEmailEditText"
+                  android:textSize="18sp"
+                  android:background="@android:color/white"
+                  android:hint="Enter your email"
+                  android:textColorHint="#212121"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="9dp"
+                  android:inputType="textPassword"
+                  android:id="@+id/logInActivityPasswordEditText"
+                  android:textSize="18sp"
+                  android:background="@android:color/white"
+                  android:layout_marginTop="20dp"
+                  android:hint="Enter your password"
+                  android:textColorHint="#212121"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:background="@android:color/white"
+                android:layout_marginTop="25dp"
+                android:id="@+id/logInActivityLogInButton"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="10dp"
+                  android:text="Or"
+                  android:textColor="@android:color/white"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:background="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/logInActivityCreateAccountButton"/>
+
+    </LinearLayout>
+</FrameLayout>

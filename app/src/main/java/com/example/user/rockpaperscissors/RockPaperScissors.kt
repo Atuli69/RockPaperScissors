@@ -27,26 +27,26 @@ class RockPaperScissors : AppCompatActivity() {
     fun gameon(view:View) {
         PC.visibility = View.VISIBLE
         Result.visibility = View.VISIBLE
-        val list = listOf("Rock","Paper","Scissors")
+        val list = listOf("rock","Paper","Scissors")
         val button = view as Button
         val pcChoice = list.getRandomElement()
         val yourChoice = button.text.toString()
         if (pcChoice == yourChoice) {
             Result.text = "Draw"
-        } else if (pcChoice == "Rock") {
+        } else if (pcChoice == "rock") {
             if (yourChoice == "Paper") {
                 Result.text = "Win"
             } else {
                 Result.text = "Lost"
             }
         } else if (pcChoice == "Paper") {
-            if (yourChoice == "Rock") {
+            if (yourChoice == "rock") {
                 Result.text = "Lost"
             } else {
                 Result.text = "win"
             }
         } else if (pcChoice =="Scissors") {
-            if (yourChoice == "Rock") {
+            if (yourChoice == "rock") {
                 Result.text = "win"
             } else {
                 Result.text = "Lost"
